@@ -1,0 +1,3 @@
+tracery==0.1.1
+PyTumblr==0.1.2
+atproto==0.0.65

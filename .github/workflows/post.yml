@@ -2,8 +2,8 @@ name: Post Horoscope
 
 on:
   schedule:
-    # Every hour, on the hour
-    - cron: '0 * * * *'
+    # Every 30 minutes (approximate, GitHub may delay up to a few hours under heavy load)
+    - cron: '*/30 * * * *'
   workflow_dispatch:
     # Allows manual triggering from the Actions tab (useful for testing)
 

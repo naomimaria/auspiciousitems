@@ -1,20 +1,20 @@
 {
     "origin": [
-        "\\##signs# should watch out for #plural objects a# that may cross your path this #duration#. They will have #negative adjective# consequences.",
-        "\\##signs#, keep a #singular object b# on your person today. It will provide a #positive adjective# atmosphere all #duration#.",
-        "\\##signs#, surround yourself with #plural objects b# and #plural objects a# this #duration#. They will protect you from the #negative adjective# event due to cross your path soon.",
-        "\\##signs#, apply a poultice made with ground #plural objects b# to your #body part# at #time of day# for #positive adjective# events this lunar month.",
-        "\\##signs#, use a salve made from #plural objects a# this #duration# to avoid a #negative adjective# crisis coming soon.",
-        "\\##signs#, sleep with a #singular object a# under your pillow to have #positive adjective# dreams tonight.",
-        "\\##signs#, place a single #singular object b# inside a box and put it under your sink to dispel the #negative adjective# activity in your area.",
-        "\\##signs#, to cleanse your your internet karma, print out your #social# profile, fold it #cardinal number# times, cover it in #dip#, and burn under a #moon phase#.",
-        "\\##signs#, beware of those with #color# shoes as they usher #negative adjective# events. Jump #cardinal number# times to negate the effects if you cross paths.",
-        "\\##signs#, put a jar full of #dip# in a toilet reservoir to attract #positive adjective# vibes for the next #cardinal number# days.",
-        "\\##signs#, mix an elixer using #liquid base# and #plural objects b# and drink under the #moon phase# for #positive adjective# dreams.",
-        "\\##signs#, drink a tincture made of #liquid base# and #singular object a# to dispell #negative adjective# feelings.",
-        "\\##signs#, post a selfie with a #color# filter on it for #positive adjective# moods all #duration#.",
-        "\\##signs#, bring or wear #accessory# this #duration# for a #positive adjective# time.",
-        "\\##signs#, scatter some #sprinkleable nouns# on your doorstep before you leave today to ward off #negative adjective# energies this #duration#.",
+        "#signs# should watch out for #plural objects a# that may cross your path this #duration#. They will have #negative adjective# consequences.",
+        "#signs#, keep a #singular object b# on your person today. It will provide a #positive adjective# atmosphere all #duration#.",
+        "#signs#, surround yourself with #plural objects b# and #plural objects a# this #duration#. They will protect you from the #negative adjective# event due to cross your path soon.",
+        "#signs#, apply a poultice made with ground #plural objects b# to your #body part# at #time of day# for #positive adjective# events this lunar month.",
+        "#signs#, use a salve made from #plural objects a# this #duration# to avoid a #negative adjective# crisis coming soon.",
+        "#signs#, sleep with a #singular object a# under your pillow to have #positive adjective# dreams tonight.",
+        "#signs#, place a single #singular object b# inside a box and put it under your sink to dispel the #negative adjective# activity in your area.",
+        "#signs#, to cleanse your your internet karma, print out your #social# profile, fold it #cardinal number# times, cover it in #dip#, and burn under a #moon phase#.",
+        "#signs#, beware of those with #color# shoes as they usher #negative adjective# events. Jump #cardinal number# times to negate the effects if you cross paths.",
+        "#signs#, put a jar full of #dip# in a toilet reservoir to attract #positive adjective# vibes for the next #cardinal number# days.",
+        "#signs#, mix an elixer using #liquid base# and #plural objects b# and drink under the #moon phase# for #positive adjective# dreams.",
+        "#signs#, drink a tincture made of #liquid base# and #singular object a# to dispell #negative adjective# feelings.",
+        "#signs#, post a selfie with a #color# filter on it for #positive adjective# moods all #duration#.",
+        "#signs#, bring or wear #accessory# this #duration# for a #positive adjective# time.",
+        "#signs#, scatter some #sprinkleable nouns# on your doorstep before you leave today to ward off #negative adjective# energies this #duration#.",
         "#elements#, be mindful of all #plural objects b# on this day. They cause #negative adjective# events in the near future.",
         "#elements#, when you see a #singular object a# today, smile because it will bless you with #positive adjective# things.",
         "#elements#, drink a tincture of #liquid base# and #singular object b# at #time of day# to ward off any #negative adjective# energies today.",
@@ -32,7 +32,7 @@
         "#modalities#, avoid taking a selfie facing #cardinal direction# this #duration# to avoid #negative adjective# consequences.",
         "#modalities#, if you see someone in a #color# coat today, it will bring #positive adjective# things your way.",
         "#planet# in #planetary motion# will create #positive adjective# events for all #elements# this #duration#.",
-        "#planet# in #planetary motion# can cause #negative adjective# moods for \\##signs# today. Try to keep #accessory# on your person to combat it.",
+        "#planet# in #planetary motion# can cause #negative adjective# moods for #signs# today. Try to keep #accessory# on your person to combat it.",
         "#planet# in #planetary motion# will have a #negative adjective# effect on everyone this #duration#. Scatter #sprinkleable nouns# outside your window to negate it.",
         "People born in the year of the #chinese zodiac sign#, take a #accessory# with you today to ward off #negative adjective# events this lunar month.",
         "To avoid a #negative adjective# event predicted in the #ordinal number# lunar month of the year, make a new friend born in the year of the #chinese zodiac sign#.",
@@ -59,8 +59,8 @@
         "The next #astronomical event# will influence all signs in a #negative adjective# way. Wrap yourself in #color# fabric to reduce troubles.",
         "#people phrase#, if you are feeling anxious look around you and count how many people with #accessory# there are as a distraction.",
         "The current planetary alignment neutralizes everything. No item bears any influence at this time.",
-        "Currently mapping the sky for pertinent astrological data. Please check back in one hour for a new \\#fortune.",
-        "A small #positive adjective# thing will happen this #duration# to anyone that follows this humble \\#horoscope bot."
+        "Currently mapping the sky for pertinent astrological data. Please check back in one hour for a new fortune.",
+        "A small #positive adjective# thing will happen this #duration# to anyone that follows this humble horoscope bot."
     ],
 
     "people adjective": ["Wee galactic", "Cosmic", "Heavenly", "Starry", "Celestial", "Stellar", "Astrological", "Divine", "Sublime", "Ethereal", "Sidereal", "Galactic", "Magestic", "Smallish", "Pint-sized", "Empyrean", "Miracle"],
@@ -102,7 +102,7 @@
 
     "dip": ["ranch dressing", "peanut butter", "French dressing", "almond butter", "Nutella", "yellow mustard", "ketchup", "tomato sauce", "nacho cheese", "rice milk", "balsamic vinegar", "miso", "apple cider vinegar", "cream cheese", "melted ice cream", "Greek yogurt", "raspberry vinaigrette", "fish sauce", "Worcestershire sauce", "bechamel", "caramel", "apple sauce", "hummus", "mayonnaise", "beer", "kefir", "chocolate syrup", "kombucha", "salsa", "pesto", "wine", "champagne", "hot sauce", "wasabi", "melted butter", "cashew butter", "blue cheese dressing", "soy milk", "thousand island dressing", "vodka", "barbeque sauce", "tahini", "honey mustard", "rice vinegar", "soy sauce", "whiskey", "kimchi", "almond milk", "alfredo sauce", "sour cream", "dijon mustard", "bone broth", "ponzu", "oyster sauce", "cocktail sauce", "horseradish", "ghee", "coconut curry"],
 
-    "social": ["Bluesky", "Tumblr", "Instagram", "Mastodon", "Reddit", "TikTok", "Snapchat", "LinkedIn", "YouTube", "Pinterest", "Flickr", "Threads", "BeReal", "Letterboxd", "Goodreads", "Duolingo", "Strava", "Last.fm"],
+    "social": ["Bluesky", "Tumblr", "Instagram", "Mastodon", "Spill", "Xiaohongshu", "Reddit", "TikTok", "Snapchat", "LinkedIn", "YouTube", "Pinterest", "Flickr", "Threads", "BeReal", "Strava", "Vimeo", "Facebook", "Yelp", "Meetup", "VK", "Weibo", "Odnoklassniki", "Qzone", "LINE", "WhatsApp", "QQ", "Signal", "Telegram"],
 
     "container": ["shoe box", "milk crate", "paper cup", "glass cup", "ceramic mug", "wooden bowl", "metal bowl", "crystal bowl", "shot glass", "cardboard box", "plastic bottle", "glass jar", "acrylic cup", "plastic bowl", "Solo cup", "chalice", "goblet"],
 

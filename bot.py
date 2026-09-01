@@ -15,11 +15,17 @@ Required environment variables:
 
 import json
 import os
+import re
 import sys
 import tracery
 from tracery.modifiers import base_english
 import pytumblr
 from atproto import Client as BskyClient
+
+
+def whole_word(word, text):
+    """Return True if word appears as a whole word in text (case-insensitive)."""
+    return bool(re.search(rf'\b{re.escape(word)}\b', text, re.IGNORECASE))
 
 
 # --- Grammar data (loaded once, used for tag detection) ---
@@ -77,9 +83,12 @@ def detect_tags(text):
     bluesky = []
 
     # --- Western zodiac sign ---
+    # --- Western zodiac sign ---
+    # Only match if sign appears at the start of the post, or after "for" in planetary templates
     matched_sign = None
     for sign in WESTERN_SIGNS:
-        if lower.startswith(sign) or f", {sign}" in lower or f" {sign}," in lower:
+        if re.match(rf'^{re.escape(sign)}\b', text, re.IGNORECASE) or \
+           re.search(rf'\bfor {re.escape(sign)}\b', text, re.IGNORECASE):
             matched_sign = sign
             break
     if matched_sign:
@@ -87,6 +96,7 @@ def detect_tags(text):
         bluesky += ["horoscope", "astrology", matched_sign]
 
     # --- Western elements ---
+    # These are distinctive enough ("fire signs" etc.) that substring matching is safe
     matched_element = None
     for element in WESTERN_ELEMENTS:
         if element in lower:
@@ -109,23 +119,25 @@ def detect_tags(text):
             bluesky += ["horoscope", "astrology"]
 
     # --- Planets / retrograde / prograde ---
-    has_planet = any(p in lower for p in [
-        "mercury", "venus", "mars", "jupiter", "saturn",
-        "uranus", "neptune", "pluto", "exoplanet", "meteorite",
-        "asteroid", "comet"
-    ])
+    # Only match planets in the context of "X in retrograde/prograde"
+    has_planet = bool(re.search(
+        r'\b(mercury|venus|mars|jupiter|saturn|uranus|neptune|pluto|'
+        r'an exoplanet|meteorites|an asteroid|a comet)\b.{1,20}\b(retrograde|prograde)\b',
+        text, re.IGNORECASE
+    ))
     if has_planet:
-        motion = "retrograde" if "retrograde" in lower else "prograde" if "prograde" in lower else None
-        tumblr += ["horoscope", "astrology"]
-        if motion:
-            tumblr.append(motion)
+        motion = "retrograde" if "retrograde" in lower else "prograde"
+        tumblr += ["horoscope", "astrology", motion]
         if not bluesky:
             bluesky += ["horoscope", "astrology"]
 
     # --- Chinese zodiac ---
+    # Only match animals in the specific phrases the grammar uses
     matched_chinese = None
     for animal in CHINESE_SIGNS:
-        if animal in lower:
+        if re.search(rf'\byear of the {re.escape(animal)}\b', text, re.IGNORECASE) or \
+           re.match(rf'^{re.escape(animal)}s?,', text, re.IGNORECASE) or \
+           re.search(rf'\b(wood|fire|earth|metal|water) {re.escape(animal)}\b', text, re.IGNORECASE):
             matched_chinese = animal
             break
     if matched_chinese:
